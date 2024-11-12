@@ -78,6 +78,8 @@ class BinaryHeap:
 
         depth = math.ceil(math.log2(self.currentSize + 1))
 
+        print("==================================")
+
         index = 0
         for level in range(depth):
             level_count = 2**level
@@ -95,3 +97,6 @@ class BinaryHeap:
             print(line)
 
             index += level_count
+
+        print("==================================\n")
+
